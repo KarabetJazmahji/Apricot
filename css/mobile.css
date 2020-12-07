@@ -1,0 +1,115 @@
+/* Navbar */
+.nav{
+    float: left;
+    font-size: 16px;
+}
+
+.navbar-header img{
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+#review-section{
+    width: 80%;
+    margin: 0px auto;
+}
+
+#videos-section{
+    grid-gap: 10px;
+    grid-template-areas: "item1" "item2" "item3";
+}
+
+
+
+
+/* Hours Section */
+#hours-section{
+    flex-direction: column;
+    align-items: center;
+}
+
+#address{
+    margin-top: 10px !important;
+}
+
+#address p:nth-child(3) {
+    margin-top: 20px;
+}
+
+#address p:nth-child(4) {
+    margin-bottom: 50px;
+}
+
+/* Review Section */
+#review-section{
+    display: block;
+}
+
+
+#item2 img{
+    display: block;
+    margin: 20% auto;
+    width: 60%;
+}
+
+#item3 img{
+    display: block;
+    margin: 20% auto 2%;
+    width: 60%;
+}
+
+#item3 p{
+    width: 90%;
+    margin-left: 10%;
+}
+
+#item3 div{
+    background-color: #f5f5f5;
+    padding: 5px 20px 20px 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+/* Galleries */
+video{
+    max-width: 90%;
+}
+
+
+
+
+/* Contact Section */
+#contact-section{
+    margin: 50px 10px 70px;
+}
+#contact-information{
+    flex-direction: column;
+}
+
+#contact-information i{
+    display: block;
+    text-align: center;
+}
+
+#contact-section-form{
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.closebtn{
+    top: 0px;
+    right: 10px;
+}
+
+/* Sevices */
+.services{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 10%;
+}
+
+
+

@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+a{
+    font-size: 1.6rem;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.al-center{
+    text-align: center;
+}
+
+.mg20{
+    margin: 20px 0px;
+}
+
+
+/* Spinner Section */
+#container{
+    height: 100vh;
+}
+
+#spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* Navbar */
+.nav{
+    float: right;
+    font-size: 16px;
+}
+
+.navbar{
+    background: white;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border:0px;
+}
+
+.navbar-inverse .navbar-nav li a{
+    color: #333;
+    padding-top: 25px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #febd01 !important;
+    background-color: white !important;
+    border-bottom: 1px solid #febd01;
+}
+
+.navbar-header img{
+    padding: 5px;
+    width: 200px;
+    height: 69px;
+}
+
+.container-fluid{
+    margin-bottom: 5px;
+}
+
+#dropdown-list{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+}
+
+#dropdown-list li{
+    padding-bottom: 10px !important;
+}
+
+
+#dropdown a:hover{
+    color: #febd01;
+}
+
+#dropdown i{
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#dropdown ul{
+    list-style: none;
+    padding: 5px 20px 5px 20px;
+}
+
+#dropdown ul li{
+    line-height: 2rem;
+    padding: 2px 0px;
+}
+
+#dropdown ul li:hover{
+    border-bottom: 1px solid #febd01;
+    color: #febd01;
+}
+
+
+/* Showcase section */
+#showcase{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
+      url('../images/main.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+#showcase-content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+#showcase-content a{
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+/* About Section */
+#about-section{
+    width: 60%;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#about-section h1{
+    margin: 20px;
+    font-weight: 300;
+}
+
+
+#about-section > div:nth-of-type(1){
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+
+#about-section p{
+    font-size: 1.6rem;
+}
+
+#about-section > div:nth-of-type(2){
+    margin-top: 30px;
+}
+
+#about-section > div:nth-of-type(2) li{
+    padding: 10px 0px;
+    font-size: 1.8rem;
+}
+
+/* Hours Section */
+#hours-section{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin: 50px auto;
+    color: #868686;
+}
+
+/* Hours Section */
+#hours-section > div{
+    margin: 0px 50px;
+}
+
+#address p:nth-child(3) {
+    margin-top: 50px;
+}
+
+th{
+    font-size: 18px;
+}
+
+td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.days{
+    padding-right: 10px;
+}
+
+
+/* Review Section */
+#review-section{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 10px;
+}
+
+#item1{
+   grid-column: 1 / 3;
+}
+
+#item2 img{
+    margin: 20% auto;
+    display: block;
+    width: 50%;
+}
+
+#item3 img{
+    width: 40%;
+}
+
+#item3 p{
+    width: 70%;
+    margin-left: 10%;
+}
+
+#item3 div{
+    background-color: #f5f5f5;
+    padding: 5px 20px 20px 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    width: 80%;
+}
+
+
+/* Social-links */
+#social-links i{
+    color: gray;
+    font-size: 3rem;
+}
+
+#social-links div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#social-links > p{
+    display: block;
+    margin-top: 50px;
+    text-align: center
+}
+
+#social-links > p > i{
+    color: #ff9702;
+    cursor: pointer;
+}
+
+
+
+
+/*Gallery*/
+#images-container{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.column img{
+    width: 100%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.column {
+    max-width: 50%;
+    padding: 0 5px;
+}
+
+#box{
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+#fullImage{
+    display: block;
+}
+
+#imgDescription{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    height: 150px;
+} 
+
+
+
+.closebtn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+video{
+    width: 300px;
+    height: auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#videos-section{
+    display: grid;
+    grid-template-areas: "item1 item1"
+                         "item2 item3";
+    grid-gap: 50px;
+    column-gap: 0px;
+    padding: 10px;
+}
+
+#videos-section .item1{
+    grid-area:  item1;
+    margin: 20px auto;
+}
+
+#videos-section .item2{
+    grid-area: item2;
+    margin: 0px auto;
+}
+
+#videos-section .item3{
+    grid-area: item3;
+    margin: 0px auto ;
+}
+
+
+/* Footer section */
+#main-footer{
+    background: #333;
+    color: #fff;
+    width: 100%;
+}
+
+#main-footer p{
+    padding: 10px;
+}
+
+#main-footer a:hover, #main-footer a:active{
+    color: #fff;
+}
+
+.submit{
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    border: none;
+    background: #febd01;
+}
+
+.submit:hover{
+    background: #ff9702;
+}
+
+
+/* Conatact Form */
+#contact-section{
+    margin: 50px 150px 70px;
+}
+
+#contact-information{
+    display: flex;
+    margin: 30px auto;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i{
+    color: #febd01;
+}
+
+#contact-information a{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.animation{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+    
+@-webkit-keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+}
+    
+@keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+} 
+
+.moveFromLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+}
+
+@keyframes slideInLeft {
+
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+} 
+
+.moveToUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}
+
+@keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+} 
+
+
+/* Services */
+.services ul{
+    list-style-position: inside;
+}
+
+.services ul li{
+    color: #868686;
+    font-size: 1.8rem;
+}
+
+#services-header{
+    text-align: center;
+    color: #febd01;
+    margin: 50px auto;
+}
+
+.services{
+    padding: 20px 30px;
+    float: left;
+    width: 33.33%;
+}
+#services-layout{
+    margin: 20px 10%;
+}
+
+#services-layout:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#services-image{
+    width: 100%;
+    height: 65vh;
+}
+
+
+
+
+/* Hours Section Midsize Screens */
+@media only screen and (max-width: 1040px) and (min-width: 769px){
+    #hours-section > div{
+        margin: 0px 10px;
+    }
+}

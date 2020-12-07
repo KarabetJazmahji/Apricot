@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Painting, Toronto, Ontario, Quick Painting">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+    <title>Gallery | Apricot Painting</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a href="index.html">
+                <img src="./images/logo.png" alt="Apricot Painting & Renovations">
+              </a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li id="dropdown">
+                <a style="cursor: pointer;" >Gallery <span class="caret" style="cursor: pointer;"></span></a>   
+                  <ul id="dropdown-list">
+                    <li><a href="painting.html">Painting</a></li>
+                    <li><a href="demolition.html">Demolition</a></li>
+                    <li><a href="framing.html">Framing & Drywalling</a></li>
+                  </ul>
+              </li> 
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="images-container">
+        <div class="column">
+            <img src="./images/20170405_172421.jpg" alt="wideImage" class="cursor" onclick="openBox(this)">
+            <img src="./images/20170405_172502.jpg" alt="wideImage" class="cursor" onclick="openBox(this)" >
+            <img src="./images/pic-3[236].png" alt="mediumImage" class="cursor" onclick="openBox(this)">
+        </div>
+        <div class="column">
+            <img src="./images/20170405_172508.jpg" alt="wideImage" class="cursor" onclick="openBox(this)">
+            <img src="./images/IMG-20191121-WA0004[235].jpg" alt="tallImage" class="cursor" onclick="openBox(this)">
+            <img src="./images/pic-2[237].png" alt="mediumImage" class="cursor" onclick="openBox(this)">
+        </div>
+        <div class="column">
+            <img src="./images/pic-7[238].png" alt="tallImage" class="cursor" onclick="openBox(this)">
+            <img src="./images/20170405_172504.jpg" alt="wideImage" class="cursor" onclick="openBox(this)">
+        </div>
+    </div>
+
+    <div id="box">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="fullImage" src="" alt="">
+    </div>
+
+    <div id="videos-section">
+        <h2 class="item1">Please watch the vidoes and notice the quality of our work</h2>
+        <video class="item2" controls>
+            <source src="./videos/SPRAY JOB-FIREPLACE.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="item3" controls>
+            <source src="./videos/VID-20191111-WA0100.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+    <section id="social-links">
+        <p>
+          <i class="fas fa-angle-double-up"  
+               title="Go to top" 
+               onClick="window.scrollTo(0, 0)">
+        </i>
+        </p>
+      </section>
+    
+
+    <footer id="main-footer">
+        <div class="al-center">
+        <p>Copyright &copy; 2020, Apricot Painting & Renovations, All Rights Reserved | Developed by <a target="_blank" href="https://karabetjazmahji.com/">Karabet Jazmahji</a></p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/72229aeae9.js"></script>
+    <script src="./scripts/index.js"></script>
+
+
+</body>
+</html>
